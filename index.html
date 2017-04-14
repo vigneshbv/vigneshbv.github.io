@@ -1,76 +1,88 @@
-
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
+
 </head>
+
 <body>
 
-<div class="container">
-  <h2>Biological Databases</h2>
-  <p>Collection of all required databases</p>
-  <p>Use the dropdown-menu class to select a particular database.</p>
-  <p>To open the dropdown menu, use a button or a link with a class of .dropdown-toggle and data-toggle="dropdown".</p>
-  <br>                                          
-  <div class="dropdown">
-    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Protein Databases
-    <span class="caret"></span></button>
-    <ul class="dropdown-menu">
-	<li><a href="http://www.rcsb.org/pdb/home/home.do" target = "_blank">PDB</a></li>
-      <li><a href="https://www.ncbi.nlm.nih.gov/genbank/">GenBank</a></li>
-      <li><a href="http://www.uniprot.org/">UniProt/Swiss-Prot</a></li>
-    </ul>
+    <div class="container">
+        <div class="row">
+            <div class="col s6 offset-s3">
+                <div class="card center-align">
+                    <div class="card-panel blue white-text">
+                        <h4>BIOLOGICAL DATABASES</h4></div>
+                    <div class="card-content ">
+                        <br>
+                        <a style="width:75%" class='dropdown-button btn blue ' href='#' data-activates='dropdown1'>Protein Databases</a>
+                        <ul id='dropdown1' class="dropdown-content">
+                            <li><a href="http://www.rcsb.org/pdb/home/home.do" target="_blank">PDB</a></li>
+                            <li><a href="https://www.ncbi.nlm.nih.gov/genbank/" target="_blank">GenBank</a></li>
+                            <li><a href="http://www.uniprot.org/" target="_blank">UniProt/Swiss-Prot</a></li>
+                        </ul>
+                        <br>
+                        <br>
+                        <a style="width:75%" class='dropdown-button btn blue' href='#' data-activates='dropdown2'>Gene Expression Databases
+               </a>
+                        <ul id='dropdown2' class="dropdown-content">
+                            <li><a href="https://www.ncbi.nlm.nih.gov/geo/" target="_blank">GEO</a></li>
+                            <li><a href="https://www.ncbi.nlm.nih.gov/genbank/" target="_blank">Arrayexpress</a></li>
+                            <li><a href="http://www.uniprot.org/" target="_blank">UniProt/Swiss-Prot</a></li>
+                            <li><a href="http://biogps.org/#goto=welcome" target="_blank">BioGPS</a></li>
+                            <li><a href="https://genevestigator.com/gv/" target="_blank">Gene Investigator</a></li>
+                            <li><a href="http://bgee.org/" target="_blank">Bgee</a></li>
+                        </ul>
+                        <br>
+                        <br>
+                        <a style="width:75%" class='dropdown-button btn blue' href='#' data-activates='dropdown3'>DNA Databases
+        </a>
+                        <ul id='dropdown3' class="dropdown-content">
+                            <li><a href="http://www.ddbj.nig.ac.jp/" target="_blank">DDBJ</a></li>
+                            <li><a href="http://www.ebi.ac.uk/" target="_blank">EMBL (European Bioinformatics Institute)</a></li>
+                            <li><a href="https://www.ncbi.nlm.nih.gov/genbank/" target="_blank">GenBank (National Center for Biotechnology Information)</a></li>
+                            <li><a href="https://www.ncbi.nlm.nih.gov/refseq/rsg/" target="_blank">RefSeqGene</a></li>
+                        </ul>
+                        <br>
+                        <br>
+                        <a style="width:75%" class='dropdown-button btn blue' href='#' data-activates='dropdown4'>SNP/Disease Databases
+        </a>
+                        <ul id='dropdown4' class="dropdown-content">
+                            <li><a href="https://www.omim.org" target="_blank">OMIM</a></li>
+                            <li><a href="https://www.23andme.com/" target="_blank">23andme</a></li>
+                        </ul>
+                        <br>
+                        <br>
+                        <a style="width:75%" class='dropdown-button btn blue' href='#' data-activates='dropdown5'>Pathway Databases
+        </a>
+                        <ul id='dropdown5' class="dropdown-content">
+                            <li><a href="http://www.genome.jp/kegg/pathway.html" target="_blank">KEGG</a></li>
+                            <li><a href="https://www.23andme.com/" target="_blank">23andme</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <br>
-    <br>
-     <div class="dropdown">
-    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Gene Expression Databases
-    <span class="caret"></span></button>
-    <ul class="dropdown-menu">
-	<li><a href="https://www.ncbi.nlm.nih.gov/geo/" target = "_blank">GEO</a></li>
-      <li><a href="https://www.ncbi.nlm.nih.gov/genbank/" target = "_blank">Arrayexpress</a></li>
-      <li><a href="http://www.uniprot.org/" target = "_blank">UniProt/Swiss-Prot</a></li>
-      <li><a href="http://biogps.org/#goto=welcome" target = "_blank">BioGPS</a></li>
-      <li><a href="https://genevestigator.com/gv/" target = "_blank">Gene Investigator</a></li>
-      <li><a href="http://bgee.org/" target = "_blank">Bgee</a></li>
-    </ul>
-  </div>
-  <br>
-  <br>
-     <div class="dropdown">
-    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">DNA Databases
-    <span class="caret"></span></button>
-    <ul class="dropdown-menu">
-	<li><a href="http://www.ddbj.nig.ac.jp/" target = "_blank">DDBJ</a></li>
-      <li><a href="http://www.ebi.ac.uk/" target = "_blank">EMBL (European Bioinformatics Institute)</a></li>
-      <li><a href="https://www.ncbi.nlm.nih.gov/genbank/" target = "_blank">GenBank (National Center for Biotechnology Information)</a></li>
-      <li><a href="https://www.ncbi.nlm.nih.gov/refseq/rsg/" target = "_blank">RefSeqGene</a></li>
-    </ul>
-  </div>
-  <br>
-  <br>
-    <div class="dropdown">
-    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">SNP/Disease Databases
-    <span class="caret"></span></button>
-    <ul class="dropdown-menu">
-	<li><a href="https://www.omim.org" target = "_blank">OMIM</a></li>
-    <li><a href="https://www.23andme.com/" target = "_blank">23andme</a></li>
-    </ul>
-  </div>
-  <br>
-  <br>
-    <div class="dropdown">
-    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Pathway Databases
-    <span class="caret"></span></button>
-    <ul class="dropdown-menu">
-	<li><a href="http://www.genome.jp/kegg/pathway.html" target = "_blank">KEGG</a></li>
-    <li><a href="https://www.23andme.com/" target = "_blank">23andme</a></li>
-    </ul>
-  </div>
-</div>
 
-<script src="/bfcc76e11e9025c2f1779a44e9de2a388b6fd313a3a6fbb2038355d9c38eb3a8/ns.js"></script></body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
+    <script>
+        $('.dropdown-button').click(function() {
+            .dropdown({
+                inDuration: 300,
+                outDuration: 225,
+                constrain_width: false, // Does not change width of dropdown to that of the activator
+                hover: true, // Activate on hover
+                gutter: 0, // Spacing from edge
+                belowOrigin: false, // Displays dropdown below the button
+                alignment: 'left' // Displays dropdown with edge aligned to the left of button
+            });
+        });
+
+    </script>
+</body>
+
 </html>
