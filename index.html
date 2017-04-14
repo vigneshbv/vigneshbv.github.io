@@ -20,78 +20,65 @@
                         <br>
                         <a style="width:75%" class='dropdown-button btn blue ' href='#' data-activates='dropdown1'>Protein Databases</a>
                         <ul id='dropdown1' class="dropdown-content">
-                            <li><a class="iframe" href="http://www.rcsb.org/pdb/home/home.do" target="_blank">PDB</a></li>
-                            <li><a href="https://www.ncbi.nlm.nih.gov/genbank/" target="_blank">GenBank</a></li>
-                            <li><a href="http://www.uniprot.org/" target="_blank">UniProt/Swiss-Prot</a></li>
+                            <li><a class="iframe" href="http://www.rcsb.org/pdb/home/home.do">PDB</a></li>
+                            <li><a class="iframe" href="https://www.ncbi.nlm.nih.gov/genbank/" target="_blank">GenBank</a></li>
+                            <li><a class="iframe" href="http://www.uniprot.org/" target="_blank">UniProt/Swiss-Prot</a></li>
                         </ul>
                         <br>
                         <br>
                         <a style="width:75%" class='dropdown-button btn blue' href='#' data-activates='dropdown2'>Gene Expression Databases
                </a>
                         <ul id='dropdown2' class="dropdown-content">
-                            <li><a href="https://www.ncbi.nlm.nih.gov/geo/" target="_blank">GEO</a></li>
-                            <li><a href="https://www.ncbi.nlm.nih.gov/genbank/" target="_blank">Arrayexpress</a></li>
-                            <li><a href="http://www.uniprot.org/" target="_blank">UniProt/Swiss-Prot</a></li>
-                            <li><a href="http://biogps.org/#goto=welcome" target="_blank">BioGPS</a></li>
-                            <li><a href="https://genevestigator.com/gv/" target="_blank">Gene Investigator</a></li>
-                            <li><a href="http://bgee.org/" target="_blank">Bgee</a></li>
+                            <li><a class="iframe" href="https://www.ncbi.nlm.nih.gov/geo/" target="_blank">GEO</a></li>
+                            <li><a class="iframe" href="https://www.ncbi.nlm.nih.gov/genbank/" target="_blank">Arrayexpress</a></li>
+                            <li><a class="iframe" href="http://www.uniprot.org/" target="_blank">UniProt/Swiss-Prot</a></li>
+                            <li><a class="iframe" href="http://biogps.org/#goto=welcome" target="_blank">BioGPS</a></li>
+                            <li><a class="iframe" href="https://genevestigator.com/gv/" target="_blank">Gene Investigator</a></li>
+                            <li><a class="iframe" href="http://bgee.org/" target="_blank">Bgee</a></li>
                         </ul>
                         <br>
                         <br>
                         <a style="width:75%" class='dropdown-button btn blue' href='#' data-activates='dropdown3'>DNA Databases
         </a>
                         <ul id='dropdown3' class="dropdown-content">
-                            <li><a href="http://www.ddbj.nig.ac.jp/" target="_blank">DDBJ</a></li>
-                            <li><a href="http://www.ebi.ac.uk/" target="_blank">EMBL (European Bioinformatics Institute)</a></li>
-                            <li><a href="https://www.ncbi.nlm.nih.gov/genbank/" target="_blank">GenBank (National Center for Biotechnology Information)</a></li>
-                            <li><a href="https://www.ncbi.nlm.nih.gov/refseq/rsg/" target="_blank">RefSeqGene</a></li>
+                            <li><a class="iframe" href="http://www.ddbj.nig.ac.jp/" target="_blank">DDBJ</a></li>
+                            <li><a class="iframe" href="http://www.ebi.ac.uk/" target="_blank">EMBL (European Bioinformatics Institute)</a></li>
+                            <li><a class="iframe" href="https://www.ncbi.nlm.nih.gov/genbank/" target="_blank">GenBank (National Center for Biotechnology Information)</a></li>
+                            <li><a class="iframe" href="https://www.ncbi.nlm.nih.gov/refseq/rsg/" target="_blank">RefSeqGene</a></li>
                         </ul>
                         <br>
                         <br>
                         <a style="width:75%" class='dropdown-button btn blue' href='#' data-activates='dropdown4'>SNP/Disease Databases
         </a>
                         <ul id='dropdown4' class="dropdown-content">
-                            <li><a href="https://www.omim.org" target="_blank">OMIM</a></li>
-                            <li><a href="https://www.23andme.com/" target="_blank">23andme</a></li>
+                            <li><a class="iframe" href="https://www.omim.org" target="_blank">OMIM</a></li>
+                            <li><a class="iframe" href="https://www.23andme.com/" target="_blank">23andme</a></li>
                         </ul>
                         <br>
                         <br>
                         <a style="width:75%" class='dropdown-button btn blue' href='#' data-activates='dropdown5'>Pathway Databases
         </a>
                         <ul id='dropdown5' class="dropdown-content">
-                            <li><a href="http://www.genome.jp/kegg/pathway.html" target="_blank">KEGG</a></li>
-                            <li><a href="https://www.23andme.com/" target="_blank">23andme</a></li>
+                            <li><a class="iframe" href="http://www.genome.jp/kegg/pathway.html" target="_blank">KEGG</a></li>
+                            <li><a class="iframe" href="https://www.23andme.com/" target="_blank">23andme</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
     <script src="https://vigneshbv.github.io/jquery.colorbox-min.js"></script>
     <script>
-               
-         $(document).ready(function() {
+        $(document).ready(function() {
+
             $(".iframe").colorbox({
                 iframe: true,
                 width: "90%",
                 height: "90%"
             });
-        });
-        
-        
-        $('.dropdown-button').click(function() {
-            .dropdown({
-                inDuration: 300,
-                outDuration: 225,
-                constrain_width: false, // Does not change width of dropdown to that of the activator
-                hover: true, // Activate on hover
-                gutter: 0, // Spacing from edge
-                belowOrigin: false, // Displays dropdown below the button
-                alignment: 'left' // Displays dropdown with edge aligned to the left of button
-            });
+
         });
 
     </script>
