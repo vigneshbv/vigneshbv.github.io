@@ -72,6 +72,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/js/materialize.min.js"></script>
     <script src="https://vigneshbv.github.io/jquery.colorbox-min.js"></script>
     <script>
+               
+         $(document).ready(function() {
+            $(".iframe").colorbox({
+                iframe: true,
+                width: "90%",
+                height: "90%"
+            });
+        });
+        
+        
         $('.dropdown-button').click(function() {
             .dropdown({
                 inDuration: 300,
